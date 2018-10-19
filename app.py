@@ -30,11 +30,6 @@ def main():
     
     #pass pin data to the html file
     return render_template('main.html',**templateData)
-    
-@app.route('/post', methods = ["POST"])
-def post():
-    print(request.data)
-    return render_template('demo.html')
  
 @app.route('/<changePin>/<action>')
 def action(changePin, action):
