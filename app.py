@@ -7,8 +7,9 @@ GPIO.setmode(GPIO.BCM)
 
 #Dictionary that holds pin number and state
 pins = {
-    23 : {'name' : 'GPIO 23', 'state' : GPIO.LOW},
-    24 : {'name' : 'GPIO 24', 'state' : GPIO.LOW}
+    23 : {'name' : 'Blue LED', 'state' : GPIO.LOW},
+    24 : {'name' : 'Red LED', 'state' : GPIO.LOW},
+    25 : {'name' : 'Relay', 'state' : GPIO.LOW}
     }
     
 #Set each pin to output mode and lower
