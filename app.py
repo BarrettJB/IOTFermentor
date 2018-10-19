@@ -19,6 +19,7 @@ for pin in pins:
     
 @app.route('/')
 def main():
+    #this should probably be made a function
     #Read pin state and store in the dict
     for pin in pins:
         pins[pin]['state'] = GPIO.input(pin)
@@ -29,6 +30,11 @@ def main():
     
     #pass pin data to the html file
     return render_template('main.html',**templateData)
+    
+@app.route('/post', methods = ["POST"])
+def post():
+    print(request.data)
+    return render_template('demo.html')
  
 @app.route('/<changePin>/<action>')
 def action(changePin, action):

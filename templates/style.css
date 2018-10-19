@@ -1,0 +1,41 @@
+body {
+    background-color: #D6DBdF;
+    font-family: Helvetica, Verdana, sans-serif
+}
+
+p {
+    font-size: 20px
+}
+
+
+.button {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #008CBA; 
+    border: 2px solid #008CBA;
+}
+
+.button:active {
+    background-color: #000000; /*slightly darker blue*/
+}
+
+.temp_field {
+    width: 50px; 
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+}
