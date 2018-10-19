@@ -14,7 +14,7 @@ pins = {
 #Set each pin to output mode and lower
 for pin in pins:
     GPIO.setup(pin, GPIO.OUT)
-    GPIO.output(pin, pin.get('state'))
+    GPIO.output(pin, GPIO.LOW)
     
 @app.route('/')
 def main():
