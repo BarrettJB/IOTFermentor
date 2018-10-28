@@ -19,6 +19,7 @@ for pin in pins:
     
 @app.route('/')
 def main():
+    #this should probably be made a function
     #Read pin state and store in the dict
     for pin in pins:
         pins[pin]['state'] = GPIO.input(pin)
