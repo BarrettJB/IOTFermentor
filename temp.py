@@ -13,7 +13,7 @@ B = 3950
 R0 = 10000
 
 while True:
-    num = adc.read(0,gain=GAIN)
+    num = adc.read_adc(0,gain=GAIN)
     volt = num*(5/32768)
     Rt = (volt*10000)/(5-volt)
     T_inv = (1/T0) + (1/B)*log(Rt/10000)
